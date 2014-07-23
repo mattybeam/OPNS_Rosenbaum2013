@@ -1,8 +1,8 @@
 easy.load<-function(file.name){
-  load(paste(varSave, file.name, sep=''))
+  load(paste0(varSave, file.name))
   rm(file.name)
   get(ls()[1])
 }
 
-easy.save<-function(d, file.name) save(d, file=paste(varSave, file.name, sep=''))
+easy.save<-function(d, file.name) save(d, file=paste0(varSave, file.name))
 
