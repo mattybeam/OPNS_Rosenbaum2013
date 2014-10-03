@@ -4,11 +4,14 @@
 
 source('header.R')
 # makeData()
-my.vars<-load.variables()
+my.vars <- load.variables()
 findBestLocation(
-  numSites=6,
-  assemblers=my.vars$assemblers,
-  competetors=my.vars$competetors,
-  unionRate=my.vars$unionRate,
-  beta=my.vars$costParam
-) %>% easy.save('solution.txt')
+  numSites = 6,
+  assemblers = my.vars$assemblers,
+  competetors = my.vars$competetors,
+  unionRate = my.vars$unionRate,
+  beta = my.vars$costParam
+) %>%   
+  saveRDS('solution.rds')
+  
+  
