@@ -1,5 +1,5 @@
 findBestLocation<-function(numSites, assemblers, competetors, unionRate, beta){
-    #Inputs:
+  #Inputs:
   #numSites is a scaler giving the number of supplier locations to find
   #assemblers is a data.frame with x and y locations of the auto assemblers
   #competetors is a data.frame with x and y locations of the domestic-owned suppliers, our competition
